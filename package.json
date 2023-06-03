@@ -1,6 +1,6 @@
 {
   "name": "@dimfu/recipe-scraper",
-  "version": "0.0.1",
+  "version": "0.2.0",
   "description": "Extract recipe data from the web effortlessly",
   "publishConfig": {
     "access": "public"
@@ -35,7 +35,7 @@
   ],
   "scripts": {
     "build-fast": "tsup src/index.ts --format cjs,esm",
-    "build": "pnpm run build-fast -- --dts-resolve",
+    "build": "pnpm run build-fast --dts-resolve",
     "prepublishOnly": "pnpm run build"
   },
   "devDependencies": {
@@ -51,5 +51,13 @@
   },
   "lint-staged": {
     "*": "eslint --fix"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "cheerio": "1.0.0-rc.12",
+    "iso8601-duration": "^2.1.1",
+    "jsonschema": "^1.4.1",
+    "microdata-node": "^2.0.0",
+    "schema-dts": "^1.1.2"
   }
 }
