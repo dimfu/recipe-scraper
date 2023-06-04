@@ -5,7 +5,7 @@ Scrap food recipe data from various websites that support JSON+LD and Microdata 
 ## Install
 
 ```bash
-> npm install --save @dimfu/recipe-scraper
+npm install --save @dimfu/recipe-scraper
 ```
 
 ## Usage
@@ -147,6 +147,30 @@ getRecipeData(options).then((recipe) => {
 ```
 
 You can specify the URL by either passing it as the first parameter, or by setting it in the options object.
+
+## Command line usage
+
+### Using without installation
+
+```bash
+npx @dimfu/recipe-scraper https://example/recipes/creamy-courgette-potato-bake 
+```
+
+> Note: Use this method only if you plan to use for one time, installing globally (see-below) is recommended for multiple time usages.
+
+### Installation
+
+```bash
+npm install @dimfu/recipe-scraper -g
+```
+
+> Note for Linux & MacOS users: DO NOT use sudo to install global packages! The correct way is to tell npm where to install its global packages: npm config set prefix ~/.local. Make sure ~/.local/bin is added to PATH.
+
+### Usage after installation
+
+```
+@dimfu/recipe-scraper https://example/recipes/creamy-courgette-potato-bake
+```
 
 ## License
 
