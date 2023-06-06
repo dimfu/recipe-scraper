@@ -172,6 +172,9 @@ npm install @dimfu/recipe-scraper -g
 @dimfu/recipe-scraper https://example/recipes/creamy-courgette-potato-bake
 ```
 
+## Acknowledgments
+- This project is using [recipe-data-scraper](https://www.npmjs.com/package/recipe-data-scraper) base code made by [thelifenadine](https://github.com/thelifenadine)
+
 ## License
 
 Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
